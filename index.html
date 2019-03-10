@@ -323,6 +323,26 @@
     <script type="text/javascript" src="js/lightbox.min.js"></script>
     <script type="text/javascript" src="js/wow.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
-    <script type="text/javascript" src="js/bootstrap-tour.min.js"></script>   
+    <script>
+    var tour = new Tour({
+  steps: [
+  {
+    element: "#row",
+    title: "Title of my step",
+    content: "Content of my step"
+  },
+  {
+    element: "#sub-menu",
+    title: "Title of my step",
+    content: "Content of my step"
+  }
+]});
+
+// Initialize the tour
+tour.init();
+
+// Start the tour
+tour.start();
+    </script>
 </body>
 </html>
